@@ -10,7 +10,6 @@ import org.junit.jupiter.params.provider.ValueSource
 import java.math.BigInteger
 import kotlin.test.assertEquals
 
-@Suppress("UnusedPrivateMember")
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class FibonacciTest {
     @ParameterizedTest(name = "[{index}] should throws ArithmeticException for {0}")
