@@ -48,6 +48,14 @@ val series = printFibonacciSeries(6) // "0, 1, 1, 2, 3, 5, 8"
 
 This project is licensed under the MIT License.
 
+## Built With
+
+* [Gradle](https://gradle.org/) - Dependency Management
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning.
+
 ## Authors
 
 * **Rafał Kociniewski** - [PowerMilk](https://github.com/rkociniewski)
