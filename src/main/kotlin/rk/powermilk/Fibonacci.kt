@@ -1,4 +1,4 @@
-package org.powermilk
+package rk.powermilk
 
 import java.math.BigInteger
 
@@ -8,7 +8,7 @@ import java.math.BigInteger
 internal const val MESSAGE = "The number should be greater to 0"
 
 /**
- * Function creates string with Fibonacci series steps.
+ * Function creates a string with Fibonacci series steps.
  *
  * @param number number to calculate Fibonacci series.
  * @return string with Fibonacci series steps for 0 to [number].

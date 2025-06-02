@@ -14,6 +14,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Update dependencies
 - Update dependency management by libs.versions
 - Update README.md
+- Add new tests
 
 ## 1.0.2 - 2022-01-31
 

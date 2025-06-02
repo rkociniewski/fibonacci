@@ -1,69 +1,53 @@
-# Fibonacci
+# Fibonacci Series in Kotlin
 
-[![version](https://img.shields.io/badge/version-1.0.2-yellow.svg)](https://semver.org)
+[![version](https://img.shields.io/badge/version-1.0.3-yellow.svg)](https://semver.org)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
+[![Build](https://github.com/rkociniewski/fibonacci/actions/workflows/main.yml/badge.svg)](https://github.com/rkociniewski/fibonacci/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/rkociniewski/fibonacci/branch/main/graph/badge.svg)](https://codecov.io/gh/rkociniewski/fibonacci)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.1.21-blueviolet?logo=kotlin)](https://kotlinlang.org/)
+[![Gradle](https://img.shields.io/badge/Gradle-8.14.1-blue?logo=gradle)](https://gradle.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-greem.svg)](https://opensource.org/licenses/MIT)
 
-Application calculates and display Fibonacci series for given numbers
+## Features
 
-## Getting started
+- Tail-recursive `fibonacci(n)` function
+- `printFibonacciSeries(n)` to return a string of all Fibonacci numbers up to `n`
+- Full JUnit 5 test coverage
+- Written in idiomatic Kotlin
 
-First, you need to ensure you have these applications:
+## Usage
 
-- [GIT](https://git-scm.com/) — GIT isn't necessary, but is better to have installed
-- IDE (I prefer [IntelliJ IDEA](https://www.jetbrains.com/idea/)) — It isn't necessary, but in IDE you can look up code
-  quicker and nicer.
-- [Gradle](https://gradle.org/) - necessary to build a project, sometimes IDE have it pre-installed.
-- [Java JDK](https://www.oracle.com/java/technologies/downloads/#java11) - This one is mandatory ;)
+```kotlin
+val result = fibonacci(10) // 55
+val series = printFibonacciSeries(6) // "0, 1, 1, 2, 3, 5, 8"
+````
 
-You can download a project in two ways:
+## Requirements
 
-- By GIT, typing in console this command:
-
- ```
-git clone git@gitlab.com:powermilk-default/fibonacci.git
- ```
-
-If you decide to use this one, I assume you know the basics of GIT
-
-- By download ZIP file. You need to just
-  download [this file](https://gitlab.com/powermilk-default/fibonacci/-/archive/master/fibonacci-master.zip).
-
-## Prerequisites
-
-You can build this project with [Gradle](https://gradle.org/), so dependencies are automatically downloaded and
-imported, but for your information I listed what technologies are used in this repository:
-
-Code:
-
-- [Java JDK](https://www.java.com/pl/download/) - If you want to develop this application, you will
-  need [JDK](https://www.oracle.com/java/technologies/downloads/#java11).
-  Java is a programming language what I used to write this program.
-
-Testing
-
-- [JUnit 5](https://junit.org/junit5) - The testing Framework.
-
-## Running application
-
-This application just presents a solution to some issue, and it can be run itself. It doesn't have `main()` method.
+* Kotlin 2.1.21
+* JDK 21+
+* Gradle
 
 ## Running the tests
 
-I use Gradle, so you can run test with this command:
-
-```
-gradle test
+```bash
+./gradlew test
 ```
 
-## Built With
+## Project structure
 
-* [Gradle](https://gradle.org/) - Dependency Management
+```
+├── src/
+│   └── main/kotlin/rk/powermilk/Fibonacci.kt
+│   └── test/kotlin/rk/powermilk/FibonacciTest.kt
+├── build.gradle.kts
+├── README.md
+```
 
-## Versioning
+## License
 
-We use [SemVer](http://semver.org/) for versioning.
+This project is licensed under the MIT License.
 
 ## Authors
 
-* **Rafał Kociniewski** - [PowerMilk](https://gitlab.com/rafal.kociniewski)
+* **Rafał Kociniewski** - [PowerMilk](https://github.com/rkociniewski)
